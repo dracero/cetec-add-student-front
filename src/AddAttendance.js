@@ -31,16 +31,16 @@ const AddAttendance = () => {
 
     axios({
       method: "post",
-      url: "http://localhost:8080/attendance",
+      url: process.env.REACT_APP_URL + "/attendance",
       data: bodyFormData,
       headers: { "Content-Type": "multipart/form-data" },
       withCredentials: true
     })
       .then(function (response) {
-        console.log("EXITO");
+        //console.log("EXITO");
       })
       .catch(function (response) {
-        console.log("ERROR");
+        //console.log("ERROR");
       });
   };
 

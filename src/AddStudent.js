@@ -31,16 +31,16 @@ const AddStudent = () => {
 
     axios({
       method: "post",
-      url: "http://localhost:8080/student",
+      url: process.env.REACT_APP_URL + "/student",
       data: bodyFormData,
       headers: { "Content-Type": "multipart/form-data" },
       withCredentials: true
     })
       .then(function (response) {
-        console.log("EXITO");
+        //console.log("EXITO");
       })
       .catch(function (response) {
-        console.log("ERROR");
+        //console.log("ERROR");
       });
   };
 
