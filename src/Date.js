@@ -18,6 +18,8 @@ const Date = () => {
       <LocalizationProvider dateAdapter={AdapterMoment}>
         <DateTimePicker
           label="Fecha"
+          inputFormat="DD/MM/YYYY HH:mm"
+          ampm={false}
           value={date || null}
           onChange={handleChange}
           renderInput={(params) => <TextField {...params} sx={{ m: 1 }} />}
