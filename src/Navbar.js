@@ -47,7 +47,7 @@ const Home = () => {
 
 export default function Navbar() {
   return (
-    <Router>
+    <Router forceRefresh={true}>
       <div className="center">
         <Routes>
           <Route path="/add-student" element={<AddStudent/>}></Route>
