@@ -58,7 +58,7 @@ const AddStudent = () => {
         </div>
       </div>
 
-      <Box m={1} pt={2}>
+      <Box m={1} pt={2} forceRefresh={true}>
         <Button variant="contained" type="submit">
           Agregar
         </Button>
