@@ -42,6 +42,7 @@ const AddAttendance = () => {
       .catch(function (response) {
         //console.log("ERROR");
       });
+      window.location.reload(false); 
   };
 
   return (
