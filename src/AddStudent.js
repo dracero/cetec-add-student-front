@@ -42,6 +42,7 @@ const AddStudent = () => {
       .catch(function (response) {
         //console.log("ERROR");
       });
+      window.location.reload(false);  
   };
 
   return (
