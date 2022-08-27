@@ -12,12 +12,12 @@ const NavbarList = () => {
   const list = () => {
     return(
       <div>
-        <Box m={0} pt={0}>
-          <Button component={Link} to="/add-student" variant="contained">Agregar estudiante</Button>
+        <Box m={0} pt={0} >
+          <Button component={Link} to="/add-student" variant="contained" forceRefresh={true}>Agregar estudiante</Button>
         </Box>
         <br/>
         <Box m={0} pt={0}>
-          <Button component={Link} to="/add-attendance" variant="contained">Agregar asistencia</Button>
+          <Button component={Link} to="/add-attendance" variant="contained" forceRefresh={true}>Agregar asistencia</Button>
         </Box>
       </div>
     )
@@ -31,7 +31,7 @@ const NavbarList = () => {
 const NavbarButton = () => {
   const location = useLocation().pathname
   return(
-    location === "/" ? null : <Button component={Link} to="/" variant="text">Volver</Button>
+    location === "/" ? null : <Button component={Link} to="/" variant="text" forceRefresh={true}>Volver</Button>
   )
 };
 
